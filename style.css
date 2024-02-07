@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body {
+    background-color: #080E2F;
+  }
+  * body .container #home_section_id .home_section_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080E2F;
+    height: 100vh;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_name p {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(2rem, 1.5rem + 3vw, 3rem);
+  }
+}
+@media only screen and (min-width: 501px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body {
+    background-color: #080E2F;
+  }
+  * body .container #home_section_id .home_section_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080E2F;
+    background-color: #146166;
+    height: 100vh;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_name p {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(2rem, 1.5rem + 4vw, 3rem);
+  }
+}
+@media only screen and (min-width: 800px) and (orientation: portrait) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body {
+    background-color: #080E2F;
+  }
+  * body .container #home_section_id .home_section_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080E2F;
+    background-color: #146166;
+    height: 100vh;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_name p {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 7vw;
+  }
+}
+@media only screen and (min-width: 800px) and (orientation: landscape) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body {
+    background-color: #080E2F;
+  }
+  * body .container #home_section_id .home_section_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080E2F;
+    background-color: #146166;
+    height: 100vh;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_name p {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 5vw;
+  }
+}/*# sourceMappingURL=style.css.map */
