@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap");
-@media only screen and (min-width: 200px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   * {
     margin: 0;
     scroll-behavior: smooth;
@@ -55,6 +55,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .home_name {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin: 1vh 0 0 0;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_description {
+    border: 1px solid #36395D;
+    border-radius: 5px;
+    background-color: #36395D;
+    text-align: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_description p {
+    color: #00C6C3;
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    padding: 1vh 1vh;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_slogan p {
+    color: #00C6C3;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5vmax;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .learn_more {
+    border: 1px solid #36395D;
+    border-radius: 5px;
+    background-color: #36395D;
+    text-align: center;
+    padding: 1vh 1vh;
+  }
+  * body .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .learn_more a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5vmax;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1200px) {

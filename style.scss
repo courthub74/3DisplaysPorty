@@ -21,7 +21,7 @@ $jobdescription: #00C6C3;
 $firstblue: #58a6ff;
 
 // 200px - 600px
-@media only screen and (min-width: 200px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     * {
         margin: 0;
         scroll-behavior: smooth;
@@ -79,6 +79,56 @@ $firstblue: #58a6ff;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
+                                .home_name {
+                                    font-family: 'Inter', sans-serif;
+                                    color: white;
+                                    font-weight: bold;
+                                }
+                                .name_and_description {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 5vh;
+                                    margin: 1vh 0 0 0;
+                                    .home_description {
+                                        border: 1px solid $portfolios;
+                                        border-radius: 5px;
+                                        background-color: $portfolios;
+                                        text-align: center;
+                                        p {
+                                            color: $jobdescription;
+                                            font-family: 'Inter', sans-serif;
+                                            // font-size: 2.5vmax;
+                                            font-size: 1.1rem;
+                                            padding: 1vh 1vh;
+                                        }
+                                    }
+                                    .home_slogan {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        p {
+                                            color: $jobdescription;
+                                            color: white;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 2.5vmax;
+                                        }
+                                    }
+
+                                    .learn_more {
+                                        border: 1px solid $portfolios;
+                                        border-radius: 5px;
+                                        background-color: $portfolios;
+                                        text-align: center;
+                                        padding: 1vh 1vh;
+                                        a {
+                                            text-decoration: none;
+                                            color: white;
+                                            font-family: 'Roboto', sans-serif;
+                                            font-size: 2.5vmax;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
