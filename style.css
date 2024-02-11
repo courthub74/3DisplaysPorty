@@ -209,7 +209,7 @@
 }
 @media only screen and (orientation: landscape) {
   .container {
-    height: 100vh;
+    height: 800vh;
     background-color: #00C6C3;
     background-color: #080E2F;
   }
@@ -262,6 +262,7 @@
     font-family: "Inter", sans-serif;
     color: white;
     font-weight: bold;
+    font-size: 2.5rem;
   }
   .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description {
     display: flex;
@@ -278,8 +279,8 @@
   .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_description p {
     color: #00C6C3;
     font-family: "Inter", sans-serif;
-    font-size: 1.1rem;
-    padding: 1vh 1vh;
+    font-size: 1.5rem;
+    padding: 3vh 3vh;
   }
   .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .home_slogan {
     display: flex;
@@ -291,7 +292,7 @@
     color: #00C6C3;
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 2.5vmax;
+    font-size: 1.2rem;
   }
   .container #home_section_id .home_section_class .home_section_content .home_section_words .name_and_description .learn_more {
     border: 1px solid #36395D;
@@ -304,7 +305,7 @@
     text-decoration: none;
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 2.5vmax;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1001px) {

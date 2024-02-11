@@ -254,7 +254,7 @@ $firstblue: #58a6ff;
 // LANDSCAPE
 @media only screen and (orientation: landscape) {
     .container {
-        height: 100vh;
+        height: 800vh;
         background-color: #00C6C3;
         background-color: $darkblue;
         #home_section_id {
@@ -308,6 +308,7 @@ $firstblue: #58a6ff;
                             font-family: 'Inter', sans-serif;
                             color: white;
                             font-weight: bold;
+                            font-size: 2.5rem;
                         }
                         .name_and_description {
                             display: flex;
@@ -323,8 +324,8 @@ $firstblue: #58a6ff;
                                     color: $jobdescription;
                                     font-family: 'Inter', sans-serif;
                                     // font-size: 2.5vmax;
-                                    font-size: 1.1rem;
-                                    padding: 1vh 1vh;
+                                    font-size: 1.5rem;
+                                    padding: 3vh 3vh;
                                 }
                             }
                             .home_slogan {
@@ -336,7 +337,7 @@ $firstblue: #58a6ff;
                                     color: $jobdescription;
                                     color: white;
                                     font-family: 'Roboto', sans-serif;
-                                    font-size: 2.5vmax;
+                                    font-size: 1.2rem;
                                 }
                             }
 
@@ -350,7 +351,7 @@ $firstblue: #58a6ff;
                                     text-decoration: none;
                                     color: white;
                                     font-family: 'Roboto', sans-serif;
-                                    font-size: 2.5vmax;
+                                    font-size: 1.2rem;
                                 }
                             }
                         }
