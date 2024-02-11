@@ -20,115 +20,117 @@ $jobdescription: #00C6C3;
 // First Blue
 $firstblue: #58a6ff;
 
-// 200px - 600px
-@media only screen and (max-width: 600px) {
-    * {
-        margin: 0;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        body {
-            // display: none;
-            background-color: $darkblue;
-            font-size: 1.6rem;
-            .container {
-                background-color: #00C6C3;
-                height: 100%;
-                // For Scrolling
-                #home_section_id {
-                    // For Background
-                    .home_section_class {
+// WHOLE THING
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    body {
+        background-color: $darkblue;
+        font-size: 1.6rem;
+    }
+}
+
+// MOBILE
+// SMALLEST up to 350px
+@media screen and (max-width: 350px) {
+    .container {
+        height: 100vh;
+        background-color: #00C6C3;
+        background-color: $darkblue;
+        #home_section_id {
+            // For Background
+            .home_section_class {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;   
+                background-color: $darkblue;
+                // The Home Section Content
+                .home_section_content {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3vh;
+                    // Head Shot and Ring around
+                    .back_head_shot {
+                        width: 65vw;
+                        height: 65vw;
+                        border-radius: 50%;
+                        background-color: $portfolios;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 100vh;   
-                        background-color: $darkblue;
-                        // The Home Section Content
-                        .home_section_content {
-                            width: 100%;
+                        .head_shot {
+                            width: 59vw;
+                            height: 59vw;
+                            border-radius: 50%;
+                            background-color: $darkblue;
                             display: flex;
-                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            gap: 3vh;
-                            // Head Shot and Ring around
-                            .back_head_shot {
-                                width: 65vw;
-                                height: 65vw;
+                            #headshot {
+                                width: 55vw;
+                                height: 55vw;
                                 border-radius: 50%;
+                            }
+                        }
+                    }
+                    // Home page Name and Description
+                    .home_section_words {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .home_name {
+                            font-family: 'Inter', sans-serif;
+                            color: white;
+                            font-weight: bold;
+                        }
+                        .name_and_description {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5vh;
+                            margin: 1vh 0 0 0;
+                            .home_description {
+                                border: 1px solid $portfolios;
+                                border-radius: 5px;
                                 background-color: $portfolios;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                .head_shot {
-                                    width: 59vw;
-                                    height: 59vw;
-                                    border-radius: 50%;
-                                    background-color: $darkblue;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    #headshot {
-                                        width: 55vw;
-                                        height: 55vw;
-                                        border-radius: 50%;
-                                    }
+                                text-align: center;
+                                p {
+                                    color: $jobdescription;
+                                    font-family: 'Inter', sans-serif;
+                                    // font-size: 2.5vmax;
+                                    font-size: 1.1rem;
+                                    padding: 1vh 1vh;
                                 }
                             }
-                            // Home page Name and Description
-                            .home_section_words {
+                            .home_slogan {
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-                                .home_name {
-                                    font-family: 'Inter', sans-serif;
+                                p {
+                                    color: $jobdescription;
                                     color: white;
-                                    font-weight: bold;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 2.5vmax;
                                 }
-                                .name_and_description {
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5vh;
-                                    margin: 1vh 0 0 0;
-                                    .home_description {
-                                        border: 1px solid $portfolios;
-                                        border-radius: 5px;
-                                        background-color: $portfolios;
-                                        text-align: center;
-                                        p {
-                                            color: $jobdescription;
-                                            font-family: 'Inter', sans-serif;
-                                            // font-size: 2.5vmax;
-                                            font-size: 1.1rem;
-                                            padding: 1vh 1vh;
-                                        }
-                                    }
-                                    .home_slogan {
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
-                                        p {
-                                            color: $jobdescription;
-                                            color: white;
-                                            font-family: 'Roboto', sans-serif;
-                                            font-size: 2.5vmax;
-                                        }
-                                    }
+                            }
 
-                                    .learn_more {
-                                        border: 1px solid $portfolios;
-                                        border-radius: 5px;
-                                        background-color: $portfolios;
-                                        text-align: center;
-                                        padding: 1vh 1vh;
-                                        a {
-                                            text-decoration: none;
-                                            color: white;
-                                            font-family: 'Roboto', sans-serif;
-                                            font-size: 2.5vmax;
-                                        }
-                                    }
+                            .learn_more {
+                                border: 1px solid $portfolios;
+                                border-radius: 5px;
+                                background-color: $portfolios;
+                                text-align: center;
+                                padding: 1vh 1vh;
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 2.5vmax;
                                 }
                             }
                         }
@@ -139,113 +141,107 @@ $firstblue: #58a6ff;
     }
 }
 
-// 600px - 1200px
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-    * {
-        margin: 0;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        body {
-            background-color: $darkblue;
-            font-size: 1.6rem;
-            .container {
-                height: 100%;
-                // background-color: $darkblue;
-                #home_section_id {
-                    .home_section_class {
+// NEXT
+@media screen and (min-width: 351px) and (max-width: 1000px) {
+    .container {
+        height: 100vh;
+        background-color: #58a6ff;
+        #home_section_id {
+            // For Background
+            .home_section_class {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;   
+                background-color: $darkblue;
+                // The Home Section Content
+                .home_section_content {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 3vh;
+                    // Head Shot and Ring around
+                    .back_head_shot {
+                        width: 55vw;
+                        height: 55vw;
+                        border-radius: 50%;
+                        background-color: $portfolios;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 100vh;
-                        background-color: $darkblue;
-                        // The Home Section Content
-                        .home_section_content {
-                            width: 100%;
+                        .head_shot {
+                            width: 49vw;
+                            height: 49vw;
+                            border-radius: 50%;
+                            background-color: $darkblue;
                             display: flex;
-                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            gap: 3vh;
-                            // Head Shot and Ring around
-                            .back_head_shot {
-                                width: 50vw;
-                                height: 50vw;
+                            #headshot {
+                                width: 44vw;
+                                height: 44vw;
                                 border-radius: 50%;
+                            }
+                        }
+                    }
+                    // Home page Name and Description
+                    .home_section_words {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .home_name {
+                            font-family: 'Inter', sans-serif;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 1.8rem;
+                        }
+                        .name_and_description {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5vh;
+                            margin: 1vh 0 0 0;
+                            .home_description {
+                                border: 1px solid $portfolios;
+                                border-radius: 5px;
                                 background-color: $portfolios;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                .head_shot {
-                                    width: 44vw;
-                                    height: 44vw;
-                                    border-radius: 50%;
-                                    background-color: $darkblue;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    #headshot {
-                                        width: 40vw;
-                                        height: 40vw;
-                                        border-radius: 50%;
-                                    }
+                                text-align: center;
+                                p {
+                                    color: $jobdescription;
+                                    font-family: 'Inter', sans-serif;
+                                    // font-size: 2.5vmax;
+                                    font-size: 1.3rem;
+                                    padding: 1vh 1vh;
                                 }
                             }
-                            // Home page Name and Description
-                            .home_section_words {
+                            .home_slogan {
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-                                .home_name {
-                                    font-family: 'Inter', sans-serif;
+                                p {
+                                    color: $jobdescription;
                                     color: white;
-                                    font-weight: bold;
-                                    font-size: 3.2rem;
+                                    font-family: 'Roboto', sans-serif;
+                                    // font-size: 2.5vmax;
+                                    font-size: 1.2rem;
                                 }
-                                .name_and_description {
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5vh;
-                                    margin: 1vh 0 0 0;
-                                    .home_description {
-                                        border: 1px solid $portfolios;
-                                        border-radius: 5px;
-                                        background-color: $portfolios;
-                                        text-align: center;
-                                        p {
-                                            color: $jobdescription;
-                                            font-family: 'Inter', sans-serif;
-                                            font-size: 2rem;
-                                            padding: 2.2vh 2.2vh;
-                                        }
-                                    }
-                                    .home_slogan {
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
-                                        p {
-                                            color: $jobdescription;
-                                            color: white;
-                                            font-family: 'Roboto', sans-serif;
-                                            font-size: 1.5rem;
-                                            // background-color: red;
-                                        }
-                                    }
+                            }
 
-                                    .learn_more {
-                                        border: 1px solid $portfolios;
-                                        border-radius: 5px;
-                                        background-color: $portfolios;
-                                        text-align: center;
-                                        padding: 1vh 1vh;
-                                        a {
-                                            text-decoration: none;
-                                            color: white;
-                                            font-family: 'Roboto', sans-serif;
-                                            font-size: 1.8rem;
-                                        }
-                                    }
+                            .learn_more {
+                                border: 1px solid $portfolios;
+                                border-radius: 5px;
+                                background-color: $portfolios;
+                                text-align: center;
+                                padding: 1vh 1vh;
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    font-family: 'Roboto', sans-serif;
+                                    // font-size: 2.5vmax;
+                                    font-size: 1.1rem;
                                 }
                             }
                         }
@@ -256,26 +252,10 @@ $firstblue: #58a6ff;
     }
 }
 
-// 600px - 1200px
-// @media only screen and (min-width: 601px) and (max-width: 1200px) {
-//     * {
-//         margin: 0;
-//         scroll-behavior: smooth;
-//         scroll-snap-type: y mandatory;
-//         body {
-//             display: none;
-//         }
-//     }
-// }
-
-// 1200px and beyond
-@media only screen and (min-width: 1201px) {
-    * {
-        margin: 0;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        body {
-            display: none;
-        }
+// NEXT
+@media screen and (min-width: 1001px) {
+    .container {
+        height: 100vh;
+        background-color: darkred;
     }
 }
