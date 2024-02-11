@@ -112,17 +112,15 @@
     scroll-snap-type: y mandatory;
   }
   * body {
-    display: none;
+    background-color: #080E2F;
+    font-size: 1.6rem;
   }
-}
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  * {
-    margin: 0;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+  * body .container {
+    height: 100%;
   }
-  * body {
-    display: none;
+  * body .container #home_section_id .home_section_class {
+    height: 100vh;
+    background-color: #080E2F;
   }
 }
 @media only screen and (min-width: 1201px) {
