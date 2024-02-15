@@ -142,7 +142,7 @@ $firstblue: #58a6ff;
 }
 
 // NEXT
-@media screen and (min-width: 351px) and (max-width: 1000px) {
+@media screen and (min-width: 351px) and (max-width: 800px) {
     .container {
         height: 100vh;
         background-color: #58a6ff;
@@ -249,14 +249,92 @@ $firstblue: #58a6ff;
                 }
             }
         }
+
+        // EXPERIENCE SECTION
+        #experience_section_id {
+            .experience_section_class {
+                background-color: $darkblue;
+                // background-color: #00313E;
+                height: 100vh;
+                .section_title {
+                    // margin: 0vh 0 0 15vw;
+                    padding: 5vh 0 0 8vw;
+                    p {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+                .experience_section_content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5vh;
+                    margin: 5vh 0 0 0;
+                    .job_block {
+                        width: 80%;
+                        height: 18vh;
+                        border: 1px solid $portfolios;
+                        border-radius: 10px;
+                        background-color: $portfolios;
+                        // background-color: #00C6C3;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5vw;
+                        padding: 10px 10px;
+                        box-shadow: 2px 2px 2px 2px $boxshadowcircles;
+                        // JOB DETAILS FOR ALL
+                        .job_details {
+                            text-align: center;
+                            .job_company {
+                                color: white;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1.2rem;
+
+                            }
+                            .job_title {
+                                color: $jobdescription;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1rem;
+                            }
+                        }
+                        // COURDEVELOPS LOGO
+                        .job_one_logo {
+                            #courdevelops {
+                                width: 28vw;
+                                height: 28vw;
+                            }
+                        }  
+                        // SLEA LOGO
+                        .job_two_logo {
+                            #slea {
+                                width: 25vw;
+                                height: 25vw;
+                            }
+                        }
+                        // R1RCM LOGO
+                        .job_three_logo {
+                            #r1rcm {
+                                width: 20vw;
+                                height: 18vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // LANDSCAPE
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-width: 801px) {
     .container {
-        height: 800vh;
+        height: 200vh;
         background-color: #00C6C3;
         background-color: $darkblue;
+        // HOME PAGE
         #home_section_id {
             // For Background
             .home_section_class {
@@ -269,41 +347,49 @@ $firstblue: #58a6ff;
                 .home_section_content {
                     width: 100%;
                     display: flex;
-                    flex-direction: column;
+                    // flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    gap: 3vh;
-                    margin: 50vh 0 0 0;
+                    gap: 7vh;
+                    margin: 0vh 0 0 0;
+                    // background-color: yellowgreen;
                     // Head Shot and Ring around
-                    .back_head_shot {
-                        width: 33vw;
-                        height: 33vw;
-                        border-radius: 50%;
-                        background-color: $portfolios;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        .head_shot {
-                            width: 29vw;
-                            height: 29vw;
+                    .headshot_div {
+                        // background-color: red;
+                        // margin: -40vh 0 0 -50vw;
+                        .back_head_shot {
+                            width: 33vw;
+                            height: 33vw;
                             border-radius: 50%;
-                            background-color: $darkblue;
+                            background-color: $portfolios;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            #headshot {
-                                width: 25vw;
-                                height: 25vw;
+                            .head_shot {
+                                width: 29vw;
+                                height: 29vw;
                                 border-radius: 50%;
+                                background-color: $darkblue;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                #headshot {
+                                    width: 25vw;
+                                    height: 25vw;
+                                    border-radius: 50%;
+                                }
                             }
                         }
                     }
                     // Home page Name and Description
                     .home_section_words {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                        // display: none;
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: center;
+                        // align-items: center;
+                        // background-color: #00C6C3;
+                        // margin: -50vh 0 0 40vw;
                         .home_name {
                             font-family: 'Inter', sans-serif;
                             color: white;
@@ -353,6 +439,43 @@ $firstblue: #58a6ff;
                                     font-family: 'Roboto', sans-serif;
                                     font-size: 1.2rem;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // EXPERIENCE SECTION
+        #experience_section_id {
+            .experience_section_class {
+                background-color: $nextgreen;
+                height: 100vh;
+                .section_title {
+                    p {
+                        color: white;
+                        font-family: 'Inter', sans-serif;
+                    }
+                }
+                .experience_section_content {
+                    display: flex;
+                    flex-direction: column;
+                    .job_one {
+                        border: 1px solid $skillsteal;
+                        background-color: $skillsteal;
+                        .job_one_logo {
+                            width: 20vw;
+                            height: 20vw;
+                        }
+                        .job_one_details {
+                            .job_company {
+                                color: white;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 2rem;
+                            }
+                            .job_title {
+                                color: $jobdescription;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 1rem;
                             }
                         }
                     }
